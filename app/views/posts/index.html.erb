@@ -1,0 +1,10 @@
+<% provide(:title, "All Posts") %>
+<ul>
+	<% @posts.each do |post| %>
+		<li><%= post.created_at %>
+			| <%= post.body %>
+			<% if logged_in? %>
+				| <%= post.user.name %>
+		<% end %>
+	<% end %>
+</ul>

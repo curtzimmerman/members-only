@@ -1,6 +1,7 @@
 <div id="header">
 	<%= link_to "Home", root_path %>
 	<% if logged_in? %>
+		<%= link_to "Create a post", new_post_path %>	
 		<%= link_to "Profile", current_user %>
 		<%= link_to "Log out", logout_path, method: "delete" %>
 	<% else %>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
+  root 'posts#index'
   get 'help' => 'static_pages#help'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   
   resources :users
+  resources :posts, only: [:new, :create, :index]
  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
