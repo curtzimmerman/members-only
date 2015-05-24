@@ -1,0 +1,3 @@
+_Members Only_ Project for [The Odin Project](http://www.theodinproject.com/ruby-on-rails/authentication)
+
+A project using Ruby on Rails. This is a microblogging app, where users can post messages to a common index feed. The catch is that only registered and logged in users can view the user that made the post. The goal of this project was to gain experience in rolling your own authentication and authorization of users. Utilized a remember user feature that stored the user information securely between sessions. Displayed certain information to a user depending on their logged in status. 
